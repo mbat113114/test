@@ -6,10 +6,10 @@ colorama.init(autoreset = True)
 #class 
 class mod(self):
   # decorators shoud be use 
-  def dec1(fun1):
+  def dec1(fun):
     def exc():
       print(f"{Fore.GREEN} excuting now")
-		  fun1()
+		  fun()
 		  print(f"{Fore.GREEN} excuted")
 	  return exc
 
@@ -44,7 +44,7 @@ print()
 x = int(input(f"{Fore.BLUE}select the option "))
 
 
-@mod().dec1
+@mod().dec1()
 def pro():
     if x== 1:
         print(f"{Fore.GREEN} option is ", x)
