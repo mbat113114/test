@@ -3,6 +3,18 @@ import colorama
 from colorama import Fore,Back,Style
 import turtle
 colorama.init(autoreset = True)
+#class 
+class mod(self):
+  # decorators shoud be use 
+  def dec1(fun1):
+    def exc():
+      print(f"{Fore.GREEN} excuting now")
+		  fun1()
+		  print(f"{Fore.GREEN} excuted")
+	  return exc
+
+    
+    
 
 title = f"{Fore.GREEN}W" + f"{Fore.RED}E" + f"{Fore.BLACK}L" + f"{Fore.BLUE}C" + f"{Fore.WHITE}O" + f"{Fore.GREEN}M" + f"{Fore.RED}E"
 object = turtle.Turtle()
@@ -24,15 +36,8 @@ print(f"{Fore.GREEN} 04 page 4 ")
 print()
 x = int(input(f"{Fore.BLUE}select the option "))
 
-# decorators shoud be use 
-def dec1(fun1):
-	def exc():
-		print(f"{Fore.GREEN} excuting now")
-		fun1()
-		print(f"{Fore.GREEN} excuted")
-	return exc
 
-@dec1
+@mod().dec1
 def pro():
     if x== 1:
         print(f"{Fore.GREEN} option is ", x)
