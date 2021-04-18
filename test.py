@@ -37,7 +37,7 @@ print()
 x = int(input(f"{Fore.BLUE}select the option "))
 
 
-@mod().dec1
+@mod().dec1()
 def pro():
     if x== 1:
         print(f"{Fore.GREEN} option is ", x)
