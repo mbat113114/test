@@ -1,4 +1,2 @@
-#!/data/data/com.termux/files/usr/bin/bash
-echo("aman choudhary")
-
-
+#!/system/bin/sh
+echo Hello, World!
