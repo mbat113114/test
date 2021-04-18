@@ -27,11 +27,13 @@ object = turtle.Turtle()
 object.pencolor("red")
 f=1
 s=10
+a=1
 for i in range(400):
     object.forward(f)
-    object.right(91)
+    object.right(a)
     object.speed(s)
-    f+=3
+    f+=1
+    a+=1
     s+=10
 print(Style.BRIGHT + title)
 print(Fore.GREEN + "option are ;")
