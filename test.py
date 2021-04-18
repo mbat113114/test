@@ -26,13 +26,16 @@ title = f"{Fore.GREEN}W" + f"{Fore.RED}E" + f"{Fore.BLACK}L" + f"{Fore.BLUE}C" +
 object = turtle.Turtle()
 object.pencolor("red")
 f=1
+b=1
 s=10
 a=1
 for i in range(400):
     object.forward(f)
     object.right(a)
+    object.backward(f)
     object.speed(s)
     f+=1
+    f+=2
     a+=1
     s+=10
 print(Style.BRIGHT + title)
