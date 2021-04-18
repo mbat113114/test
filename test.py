@@ -4,6 +4,13 @@ from colorama import Fore,Back,Style
 import turtle
 colorama.init(autoreset = True)
 
+#class 
+class mod(self):
+
+
+
+
+
 title = f"{Fore.GREEN}W" + f"{Fore.RED}E" + f"{Fore.BLACK}L" + f"{Fore.BLUE}C" + f"{Fore.WHITE}O" + f"{Fore.GREEN}M" + f"{Fore.RED}E"
 object = turtle.Turtle()
 object.pencolor("red")
